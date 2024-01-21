@@ -1,0 +1,29 @@
+﻿@model List<Sehmus.EntitiesLayer.Concrete.Contact>
+
+<div class="col-md-6">
+    <div class="title-box-2 pt-4 pt-md-0">
+        <h5 class="title-left">
+           İletişim Blgileri
+        </h5>
+    </div>
+    @foreach (var item in Model)
+    {
+    <div class="more-info">
+        <p class="lead">
+          @item.Description
+        </p>
+        <ul class="list-ico">
+            <li><span class="bi bi-geo-alt"></span> @item.Address</li>
+            <li><span class="bi bi-phone"></span> @item.Phone</li>
+            <li><span class="bi bi-envelope"></span> @item.Mail</li>
+        </ul>
+    </div>
+    <div class="socials">
+        <ul>
+            <li><a href="@item.SocialMedia1"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+            <li><a href="@item.SocialMedia2"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+            <li><a href="@item.SocialMedia3"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+        </ul>
+    </div>
+    }
+</div>

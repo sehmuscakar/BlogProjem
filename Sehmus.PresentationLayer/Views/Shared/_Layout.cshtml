@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+    @await Html.PartialAsync("/Views/Partial/HeadPartial.cshtml")
+<body>
+    <!-- ======= Header ======= -->
+    @await Html.PartialAsync("/Views/Partial/HeaderPartial.cshtml")
+    <!-- ======= Hero Section ======= -->
+   @await Component.InvokeAsync("Hero")
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        @await Component.InvokeAsync("Information")
+        <!-- ======= Services Section ======= -->
+           <div class="section-title">
+            <div class="title-box text-center">
+                <h3 class="title-a">
+                  Hizmetler
+                </h3>
+                <p class="subtitle-a">
+                    Sunduğumuz hizmetlerle müşterilerimizi benzersiz bir tecrübeye davet ediyoruz.
+                </p>
+                <div class="line-mf"></div>
+            </div>
+        </div>
+         @await Component.InvokeAsync("Service")
+      <!-- End Services Section -->
+        <!-- ======= Counter Section ======= -->
+        @await Component.InvokeAsync("Counter")
+        <br />
+   <!-- End Counter Section -->
+        <!-- ======= Portfolio Section ======= -->
+           <div class="section-title">
+            <div class="title-box text-center">
+                <h3 class="title-a">
+                    Portföy
+                </h3>
+                <p class="subtitle-a">
+                    Benzersiz projelerimizle özel çözümler sunuyoruz.
+                </p>
+                <div class="line-mf"></div>
+            </div>
+        </div>
+        @await Component.InvokeAsync("Portfolio")
+        <!-- ======= Testimonials Section ======= -->
+        <div class="section-title">
+            <div class="title-box text-center">
+                <h3 class="title-a">
+                    Referanslar
+                </h3>
+                <p class="subtitle-a">
+                    Müşterilerimize özel içeriklerle zenginleşmiş bir deneyim sağlıyoruz.
+                </p>
+                <div class="line-mf"></div>
+            </div>
+        </div>
+        @await Component.InvokeAsync("Testimonial")
+        <br />
+   <!-- End Testimonials Section -->
+        <!-- ======= Blog Section ======= -->
+           <div class="section-title">
+            <div class="title-box text-center">
+                <h3 class="title-a">
+                Blog
+                </h3>
+                <p class="subtitle-a">
+                    Keşfetmeye değer içeriklerle, ilgi alanlarınıza özel bir dünyanın kapılarını aralıyoruz.
+                </p>
+                <div class="line-mf"></div>
+            </div>
+        </div>
+        @await Component.InvokeAsync("Blog")
+        <!-- ======= Contact Section ======= -->
+    </main><!-- End #main -->
+       <div class="container">
+    <main role="main" class="pb-3">
+            @RenderBody()
+            </main>
+    </div>
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">Copyright &copy; <span id="current-year"></span> <strong>Şehmus Çakar</strong> Tüm Hakları Saklıdır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- Footer Bitiş -->
+
+    <script>
+        document.getElementById("current-year").innerHTML = new Date().getFullYear();
+    </script>
+
+      @await Html.PartialAsync("/Views/Partial/ScriptPartial.cshtml")
+</body>
+
+</html>
+<style>
+    .section-title {
+        text-align: center; /* Sayfanın ortasına hizalama */
+        margin: auto; /* Yatayda ortalamak için */
+        width: 50%; /* İstediğiniz genişliği ayarlayabilirsiniz */
+    }
+</style>

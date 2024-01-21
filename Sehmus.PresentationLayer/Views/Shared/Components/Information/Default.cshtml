@@ -1,0 +1,47 @@
+﻿@model List<Sehmus.EntitiesLayer.Concrete.Information>
+<section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-shadow-full">
+                     @foreach (var item in Model)
+                            {        
+                    <div class="row">
+                        <div class="col-md-6"> 
+                            <div class="row">
+                                <div class="col-sm-6 col-md-5">
+                                    <div class="about-img">
+                                        <img src="/Img/@item.ImageUrl" class="img-fluid rounded b-shadow-a" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-7">
+                                    <div class="about-info">
+                                        <p><span class="title-s">Eğitim: </span> <span>Mersin Üniversitesi</span></p>
+                                        <p><span class="title-s">Bölüm: </span> <span>Bilişim Sistemleri ve Teknolojileri</span></p>
+                                        <p><span class="title-s">Derece: </span> <span>Lisans</span></p>
+                                        <p><span class="title-s">Eğitim Zamanı: </span> <span>2020 - 2024</span></p>
+                                        <p><span class="title-s">Unvan: </span> <span>@item.Degree</span></p>                                
+                                    </div>
+                                </div>
+                            </div>
+                           @await Component.InvokeAsync("Skill")
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-me pt-4 pt-md-0">
+                                <div class="title-box-2">
+                                    <h5 class="title-left">
+                                      Hakkımda
+                                    </h5>
+                                </div>
+                                <p class="lead">
+                                   @item.About
+                                </p>                         
+                            </div>
+                        </div>   
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End About Section -->

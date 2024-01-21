@@ -1,0 +1,17 @@
+﻿@model List<Sehmus.EntitiesLayer.Concrete.SubMenu>
+<nav id="navbar" class="navbar">
+    <ul>
+        @await Component.InvokeAsync("Menu1")
+        <li class="dropdown">
+          @await Component.InvokeAsync("Menu2")
+            <ul>
+                @foreach (var item in Model)
+                {
+                <li><a href="@item.Link">@item.Name</a></li>
+                }
+            </ul>
+        </li>
+        <li><a class="nav-link scrollto" href="/Home/Contact">İletişim</a></li>
+    </ul>
+    <i class="bi bi-list mobile-nav-toggle"></i>
+</nav><!-- .navbar -->

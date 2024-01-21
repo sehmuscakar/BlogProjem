@@ -1,0 +1,50 @@
+﻿@model List<Sehmus.EntitiesLayer.Concrete.Portfolio>
+<section id="work" class="portfolio-mf sect-pt4 route">
+    <style>
+        .work-box {
+            height: 100%; /* İstediğiniz yüksekliği burada belirtin */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .work-img {
+            flex: 1;
+        }
+
+        .work-content {
+            flex: 1;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4" style="margin-bottom: 20px;">
+                    <div class="work-box">
+                        <a href="~/Img/@item.ImageUrl" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                            <div class="work-img">
+                                <img src="~/Img/@item.ImageUrl" alt="" class="img-fluid">
+                            </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">@item.Client</h2>
+                                    <div class="w-more">
+                                        <span class="w-ctegory">@item.Category</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <a href="/Home/Portfolio/@item.Id"><span class="bi bi-plus-circle"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section><!-- End Portfolio Section -->

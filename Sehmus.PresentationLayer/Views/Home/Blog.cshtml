@@ -1,0 +1,104 @@
+﻿@model Sehmus.EntitiesLayer.Dtos.BlogDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+@await Html.PartialAsync("/Views/Partial/HeadPartial.cshtml")
+<body>
+    <!-- ======= Header ======= -->
+    @await Html.PartialAsync("/Views/Partial/HeaderPartial.cshtml")
+
+    <div class="hero hero-single route bg-image" style="background-image: url(/Img/blog.jpeg)">
+        <div class="overlay-mf"></div>
+        <div class="hero-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <h2 class="hero-title mb-4">Blog Detay</h2>
+                    <ol class="breadcrumb d-flex justify-content-center">
+                        <li class="breadcrumb-item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Detaya Git</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="main">
+        <!-- ======= Blog Single Section ======= -->
+        <section class="blog-wrapper sect-pt4" id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="post-box">
+                            <div class="post-thumb">
+                                <img src="~/Img/@Model.BlogImage" class="img-fluid" alt="" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="post-meta">
+                                <h1 class="article-title">@Model.Title</h1>
+                                <ul>
+                                    <li>
+                                        <span class="bi bi-person"></span>
+                                        <a href="#">Şehmus Çakar</a>
+                                    </li>
+                                    <li>
+                                        <span class="bi bi-tag"></span>
+                                        <a href="#">@Model.BlogCategoryName</a>
+                                    </li>
+                                    <li>
+                                    <a href="#">
+                                        <span class="bi bi-calendar"></span> <!-- Bu satır takvim ikonunu ekler -->
+                                        @Model.CreatedDate.ToString("yyyy-MM-dd")
+                                    </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="article-content">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">@Model.Description</p>
+                                </blockquote>
+                                <p>
+                                    @Model.DescriptionDetails
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-md-4">
+                        @await Component.InvokeAsync("BlogCategory")
+                        @await Component.InvokeAsync("BlogSlider")
+                    </div>
+                        </div>
+                         
+            </div>
+        </section><!-- End Blog Single Section -->
+
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">Copyright &copy; <span id="current-year"></span> <strong>Şehmus Çakar</strong> Tüm Hakları Saklıdır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- Footer Bitiş -->
+
+    <script>
+        document.getElementById("current-year").innerHTML = new Date().getFullYear();
+    </script>
+
+    @await Html.PartialAsync("/Views/Partial/ScriptPartial.cshtml")
+
+</body>
+
+</html>

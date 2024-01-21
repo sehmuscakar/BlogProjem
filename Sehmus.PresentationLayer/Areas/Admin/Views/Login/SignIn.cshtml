@@ -1,0 +1,80 @@
+﻿@model Sehmus.PresentationLayer.Areas.Admin.Models.LoginViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+@await Html.PartialAsync("/Areas/Admin/Views/AdminPartial/AdminHeadPartial.cshtml")
+<body>
+    <main>
+        <div class="container">
+            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="pt-4 pb-2">
+                                        <h5 class="card-title text-center pb-0 fs-4">Hesabınıza giriş yapın</h5>
+                                        <p class="text-center small">Giriş yapmak için kullanıcı adınızı ve şifrenizi girin</p>
+                                    </div>
+                                    <form asp-action="SignIn" asp-controller="Login" method="post" >
+                                       <div class="col-12 mb-3">
+                                            <label asp-for="Username" class="form-label">Kullanıcı Adı</label>
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text"></span>
+                                                <input asp-for="Username" type="text" class="form-control" required>
+                                                <div class="invalid-feedback">
+                                                    @if (ViewBag.ErrorMessage != null)
+                                                    {
+                                                        @ViewBag.ErrorMessage
+                                                    }
+                                                    else
+                                                    {
+                                                        <span>Lütfen kullanıcı adı alanını doldurunuz!</span>
+                                                    }
+                                                </div>
+                                            </div>
+                                            </div>
+                                        <div class="col-12 mb-3">
+                                            <label asp-for="Password" class="form-label">Şifre</label>
+                                            <input asp-for="Password" type="password" class="form-control" required>
+                                            <div class="invalid-feedback">Lütfen şifre alanını doldurunuz!</div>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <p class="small mb-0">
+                                                <a href="/Admin/PasswordChange/ForgetPassword" class="forget-password-link">
+                                                    <span class="link-icon">→</span>  Şifrenizi mi Unuttunuz?
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <button class="btn btn-primary w-100" type="submit">Giriş Yap</button>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="small mb-0">Hesabınız yok mu? <a href="/Admin/Register/SignUp" class="forget-password-link">Bir hesap oluşturun</a></p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    @await Html.PartialAsync("/Areas/Admin/Views/AdminPartial/AdminScriptPartial.cshtml")
+</body>
+</html>
+
+<style>
+    .forget-password-link {
+        text-decoration: none;
+        color: #007bff; /* Choose a color that fits your design */
+        font-weight: bold;
+    }
+
+    .link-icon {
+        margin-left: 5px;
+    }
+</style>

@@ -1,0 +1,22 @@
+﻿@model List<Sehmus.EntitiesLayer.Concrete.BlogSlider>
+  @foreach (var item in Model)
+        {
+<div class="widget-sidebar">
+
+    <h5 class="sidebar-title">@item.Title1</h5>
+  
+    <div class="sidebar-content">
+      
+        <a href=""> <img src="~/Img/@item.ImageUrl" alt="" height="70" width="100" /></a>
+        <ul class="list-sidebar">
+            <li>
+                <a href=""> <b> <span>@item.Title2 </span></b></a>
+            </li>
+        </ul>
+        <p>
+       @item.Description
+        </p>
+    
+    </div>
+</div>
+}

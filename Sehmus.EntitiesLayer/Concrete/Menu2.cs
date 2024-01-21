@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sehmus.EntitiesLayer.Concrete
+{
+   public class Menu2:BaseEntity
+    {
+        [Display(Name = "Menü Adı")]
+        [Required(ErrorMessage = "{0} alanı boş geçilemez.")]
+        public string Name { get; set; }
+        [Display(Name = "Bağlantı Adresi")]
+      
+        [Required(ErrorMessage = "{0} alanı boş geçilemez.")]
+        public string Link { get; set; }
+        public List<SubMenu> SubMenus { get; set; }
+    }
+}

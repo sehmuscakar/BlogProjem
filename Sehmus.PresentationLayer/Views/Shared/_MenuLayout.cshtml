@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr">
+@await Html.PartialAsync("/Views/Partial/HeadPartial.cshtml")
+<body>
+    @await Html.PartialAsync("/Views/Partial/HeaderPartial.cshtml")
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <!-- ======= Footer ======= -->
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">Copyright &copy; <span id="current-year"></span> <strong>Şehmus Çakar</strong> Tüm Hakları Saklıdır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- Footer Bitiş -->
+
+    <script>
+        document.getElementById("current-year").innerHTML = new Date().getFullYear();
+    </script>
+    
+    @await Html.PartialAsync("/Views/Partial/ScriptPartial.cshtml")
+</body>
+</html>

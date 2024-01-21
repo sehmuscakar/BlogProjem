@@ -1,0 +1,49 @@
+/* _content/Sehmus.PresentationLayer/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-umh69buwfs] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-umh69buwfs] {
+  color: #0077cc;
+}
+
+.btn-primary[b-umh69buwfs] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-umh69buwfs], .nav-pills .show > .nav-link[b-umh69buwfs] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-umh69buwfs] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-umh69buwfs] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-umh69buwfs] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-umh69buwfs] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-umh69buwfs] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

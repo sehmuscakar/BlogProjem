@@ -1,0 +1,14 @@
+﻿  @model List<Sehmus.EntitiesLayer.Concrete.BlogCategory>
+ <div class="widget-sidebar widget-tags">
+                            <h5 class="sidebar-title">Blog Kategoriler</h5>
+                            <div class="sidebar-content">
+                                <ul>
+                                   @foreach (var item in Model)
+                                 {
+                                     <li>
+                                         <a href="/Home/BlogList">@item.Name</a>
+                                     </li>
+                                 }                     
+                                </ul>
+                            </div>
+                        </div>

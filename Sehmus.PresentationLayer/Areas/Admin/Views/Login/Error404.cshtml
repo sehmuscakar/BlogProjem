@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+@await Html.PartialAsync("/Areas/Admin/Views/AdminPartial/AdminHeadPartial.cshtml")
+
+<body>
+
+    <main>
+        <div class="container">
+
+            <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
+                <h1>404</h1>
+                <h2>Aramakta olduğunuz sayfa mevcut değil.</h2>
+                <a class="btn" href="/Home/Anasayfa">Anasayfaya Geri Dön</a>
+                <img src="~/AdminTema/assets/img/not-found.svg" class="img-fluid py-5" alt="Page Not Found">
+            
+            </section>
+
+        </div>
+    </main><!-- End #main -->
+    @await Html.PartialAsync("/Areas/Admin/Views/AdminPartial/AdminScriptPartial.cshtml")
+
+</body>
+
+</html>
+<style>
+    .error-404 {
+        max-width: 1000px; /* İstediğiniz genişliği belirleyin */
+        margin: 0 auto; /* Sayfanın ortalanması için */
+        text-align: center; /* İçeriğin ortalanması için */
+    }
+
+    .img-fluid {
+        max-width: 100%; /* Resmin genişliğini içeriğe sığacak şekilde ayarlar */
+        height: auto; /* Oranları korumak için */
+    }
+</style>

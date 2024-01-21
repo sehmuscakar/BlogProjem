@@ -1,0 +1,417 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.PresentationLayer\\Sehmus.PresentationLayer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.BusinessLayer\\Sehmus.BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.BusinessLayer\\Sehmus.BusinessLayer.csproj",
+        "projectName": "Sehmus.BusinessLayer",
+        "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.BusinessLayer\\Sehmus.BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\Şehmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.BusinessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Şehmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.CoreLayer\\Sehmus.CoreLayer.csproj": {
+                "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.CoreLayer\\Sehmus.CoreLayer.csproj"
+              },
+              "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.DataAccessLayer\\Sehmus.DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.DataAccessLayer\\Sehmus.DataAccessLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.CoreLayer\\Sehmus.CoreLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.CoreLayer\\Sehmus.CoreLayer.csproj",
+        "projectName": "Sehmus.CoreLayer",
+        "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.CoreLayer\\Sehmus.CoreLayer.csproj",
+        "packagesPath": "C:\\Users\\Şehmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.CoreLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Şehmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.8.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.DataAccessLayer\\Sehmus.DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.DataAccessLayer\\Sehmus.DataAccessLayer.csproj",
+        "projectName": "Sehmus.DataAccessLayer",
+        "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.DataAccessLayer\\Sehmus.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Şehmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Şehmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.CoreLayer\\Sehmus.CoreLayer.csproj": {
+                "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.CoreLayer\\Sehmus.CoreLayer.csproj"
+              },
+              "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.EntitiesLayer\\Sehmus.EntitiesLayer.csproj": {
+                "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.EntitiesLayer\\Sehmus.EntitiesLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.EntitiesLayer\\Sehmus.EntitiesLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.EntitiesLayer\\Sehmus.EntitiesLayer.csproj",
+        "projectName": "Sehmus.EntitiesLayer",
+        "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.EntitiesLayer\\Sehmus.EntitiesLayer.csproj",
+        "packagesPath": "C:\\Users\\Şehmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.EntitiesLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Şehmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.CoreLayer\\Sehmus.CoreLayer.csproj": {
+                "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.CoreLayer\\Sehmus.CoreLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.PresentationLayer\\Sehmus.PresentationLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.PresentationLayer\\Sehmus.PresentationLayer.csproj",
+        "projectName": "Sehmus.PresentationLayer",
+        "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.PresentationLayer\\Sehmus.PresentationLayer.csproj",
+        "packagesPath": "C:\\Users\\Şehmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.PresentationLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Şehmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.BusinessLayer\\Sehmus.BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.BusinessLayer\\Sehmus.BusinessLayer.csproj"
+              },
+              "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.CoreLayer\\Sehmus.CoreLayer.csproj": {
+                "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.CoreLayer\\Sehmus.CoreLayer.csproj"
+              },
+              "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.DataAccessLayer\\Sehmus.DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\Şehmus\\Desktop\\ProProjeler\\Sehmus.Blog\\Sehmus.DataAccessLayer\\Sehmus.DataAccessLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+﻿@model List<Sehmus.EntitiesLayer.Concrete.Skill>
+
+    <div class="skill-mf">
+        <p class="title-s">Yetenekler</p>
+        @foreach (var item in Model)
+{
+        <span>@item.Title</span> <span class="pull-right">@item.Number%</span>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: @item.Number%;" aria-valuenow="@item.Number" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    }
+
+    </div>

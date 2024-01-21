@@ -1,0 +1,64 @@
+﻿@model List<Sehmus.EntitiesLayer.Dtos.AdminDtos.BlogListDto>
+<section id="blog" class="blog-mf sect-pt4 route">
+    <style>
+        .card-img {
+            overflow: hidden;
+            height: 200px; /* İstediğiniz yüksekliği burada belirtin */
+        }
+
+            .card-img img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+
+        .card-deck {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card-blog {
+            flex: 0 1 calc(33.3333% - 16px); /* 16px boşlukları çıkarmak için */
+            margin-bottom: 16px;
+        }
+    </style>
+
+    <div class="container">
+        <div class="card-deck">
+            @foreach (var item in Model)
+            {
+                <div class="card card-blog mb-4">
+                    <div class="card-img">
+                        <a href="/Home/Blog/@item.Id">
+                            <img src="~/Img/@item.BlogImage" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category-box">
+                            <div class="card-category">
+                                <h6 class="category">@item.BlogCategoryName</h6>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="/Home/Blog/@item.Id">@item.Title</a></h3>
+                        <p class="card-description">
+                            @item.Description
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="post-author">
+                            <a href="/Home/Blog/@item.Id">
+                                <img src="~/Img/emoji.png" alt="" class="avatar rounded-circle">
+                                <span class="author">Detaya Git</span>
+                            </a>
+                        </div>
+                        <div class="post-date">
+                            <span class="bi bi-calendar"></span>&nbsp;@item.CreatedDate.ToString("yyyy-MM-dd")
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section><!-- End Blog Section -->

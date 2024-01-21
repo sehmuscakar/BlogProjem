@@ -1,0 +1,44 @@
+﻿@model Sehmus.EntitiesLayer.Concrete.Menu2
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<h4>İlişkili Menü Güncelleme Paneli</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Link" class="control-label"></label>
+                <input asp-for="Link" class="form-control" />
+                <span asp-validation-for="Link" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Id" />
+          
+            <div class="form-group">
+                <label asp-for="AppUserId" class="control-label">Güncelleyen Kişi</label>
+                <input asp-for="AppUserId" class="form-control" />
+                <span asp-validation-for="AppUserId" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-outline-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<hr />
+<div>
+    <a class="btn btn-secondary" asp-action="Index">Listeye Geri Dön</a>
+</div>
+
+
+

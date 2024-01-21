@@ -1,0 +1,12 @@
+C:\Users\Şehmus\Desktop\ProProjeler\Sehmus.Blog\Sehmus.CoreLayer\bin\Debug\net7.0\Sehmus.CoreLayer.deps.json
+C:\Users\Şehmus\Desktop\ProProjeler\Sehmus.Blog\Sehmus.CoreLayer\bin\Debug\net7.0\Sehmus.CoreLayer.dll
+C:\Users\Şehmus\Desktop\ProProjeler\Sehmus.Blog\Sehmus.CoreLayer\bin\Debug\net7.0\Sehmus.CoreLayer.pdb
+C:\Users\Şehmus\Desktop\ProProjeler\Sehmus.Blog\Sehmus.CoreLayer\obj\Debug\net7.0\Sehmus.CoreLayer.csproj.AssemblyReference.cache
+C:\Users\Şehmus\Desktop\ProProjeler\Sehmus.Blog\Sehmus.CoreLayer\obj\Debug\net7.0\Sehmus.CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Şehmus\Desktop\ProProjeler\Sehmus.Blog\Sehmus.CoreLayer\obj\Debug\net7.0\Sehmus.CoreLayer.AssemblyInfoInputs.cache
+C:\Users\Şehmus\Desktop\ProProjeler\Sehmus.Blog\Sehmus.CoreLayer\obj\Debug\net7.0\Sehmus.CoreLayer.AssemblyInfo.cs
+C:\Users\Şehmus\Desktop\ProProjeler\Sehmus.Blog\Sehmus.CoreLayer\obj\Debug\net7.0\Sehmus.CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\Şehmus\Desktop\ProProjeler\Sehmus.Blog\Sehmus.CoreLayer\obj\Debug\net7.0\Sehmus.CoreLayer.dll
+C:\Users\Şehmus\Desktop\ProProjeler\Sehmus.Blog\Sehmus.CoreLayer\obj\Debug\net7.0\refint\Sehmus.CoreLayer.dll
+C:\Users\Şehmus\Desktop\ProProjeler\Sehmus.Blog\Sehmus.CoreLayer\obj\Debug\net7.0\Sehmus.CoreLayer.pdb
+C:\Users\Şehmus\Desktop\ProProjeler\Sehmus.Blog\Sehmus.CoreLayer\obj\Debug\net7.0\ref\Sehmus.CoreLayer.dll

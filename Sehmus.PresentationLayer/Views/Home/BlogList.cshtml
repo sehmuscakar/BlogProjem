@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "BlogList";
+    Layout = "~/Views/Shared/_MenuLayout.cshtml";
+}
+<style>
+    .page-specific-content {
+        text-align: center;
+        margin-top: 50px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Animasyon süresini 1 saniyeye ayarla */
+    }
+
+        .page-specific-content.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var pageContent = document.querySelector('.page-specific-content');
+        pageContent.classList.add('show');
+    });
+</script>
+<br />
+<br />
+<br />
+<div class="page-specific-content">
+    <h1>Blog</h1>
+    <p>Keşfetmeye değer içeriklerle, ilgi alanlarınıza özel bir dünyanın kapılarını aralıyoruz.</p>
+</div>
+@await Component.InvokeAsync("Blog")
+

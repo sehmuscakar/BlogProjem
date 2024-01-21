@@ -1,0 +1,22 @@
+﻿@model List<Sehmus.EntitiesLayer.Concrete.Counter>
+<div class="section-counter paralax-mf bg-image" style="background-image: url(/MyTema/assets/img/counters-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container position-relative">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+            <div class="col-sm-3 col-lg-3">
+                <div class="counter-box counter-box pt-4 pt-md-0">
+                    <div class="counter-ico">
+                        <span class="ico-circle"><i class="@item.Icon"></i></span>
+                    </div>
+                    <div class="counter-num">
+                        <p data-purecounter-start="0" data-purecounter-end="@item.Number" data-purecounter-duration="1" class="counter purecounter"></p>
+                        <span class="counter-text">@item.Title</span>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

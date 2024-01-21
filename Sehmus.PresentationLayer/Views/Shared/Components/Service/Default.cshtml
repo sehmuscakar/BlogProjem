@@ -1,0 +1,27 @@
+﻿@model List<Sehmus.EntitiesLayer.Concrete.Service>
+<section id="services" class="services-mf pt-5 route">
+    <div class="container">    
+        <div class="row">
+            <div class="col-md-4">
+                @foreach (var item in Model)
+                {
+             
+                <div class="service-box">
+
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="@item.IconUrl"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">@item.Title</h2>
+                        <p class="s-description text-center">
+                           @item.Description
+                        </p>
+                    </div>
+                </div>
+
+                }
+            </div>
+     
+        </div>
+    </div>
+</section>

@@ -1,0 +1,92 @@
+﻿@model Sehmus.EntitiesLayer.Concrete.Portfolio
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+@await Html.PartialAsync("/Views/Partial/HeadPartial.cshtml")
+<body>
+    <!-- ======= Header ======= -->
+    @await Html.PartialAsync("/Views/Partial/HeaderPartial.cshtml")
+
+   <div class="hero hero-single route bg-image" style="background-image: url(/Img/portfoy.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="hero-title mb-4">Portföy Detay</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="#">Portföy</a>
+            </li>
+            <li class="breadcrumb-item active">Detaya Git</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <main id="main">
+
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <div class="row gy-4">                
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+
+                                <div class="swiper-slide">
+                                    <img src="~/Img/@Model.ImageUrl" alt="" height="400">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+                            <h3>Proje Bilgileri</h3>
+                            <ul>
+                                <li><strong>Kategori</strong>:@Model.Category</li>
+                                <li><strong>Müşteri</strong>: @Model.Client</li>
+                            @*    <li><strong>Project date</strong>: 01 March, 2020</li>*@
+                                <li><strong>Proje Url</strong>: <a href="#">@Model.ProjectUrl</a></li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-description">
+                            <h2>Açıklama</h2>
+                            <p>
+        @Model.Description
+                            </p>
+                        </div>
+                    </div>
+              
+                </div>
+
+            </div>
+        </section><!-- End Portfolio Details Section -->
+
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">Copyright &copy; <span id="current-year"></span> <strong>Şehmus Çakar</strong> Tüm Hakları Saklıdır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- Footer Bitiş -->
+
+    <script>
+        document.getElementById("current-year").innerHTML = new Date().getFullYear();
+    </script>
+    @await Html.PartialAsync("/Views/Partial/ScriptPartial.cshtml")
+
+</body>
+
+</html>
